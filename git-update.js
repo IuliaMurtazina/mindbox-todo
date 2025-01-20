@@ -27,6 +27,9 @@ try {
   // Пушим изменения
   runCommand("git push");
 
+  // Деплой
+  runCommand("yarn deploy");
+
   console.log("Успешно опубликовано!");
 } catch (error) {
   console.error("Ошибка при публикации:", error.message);
